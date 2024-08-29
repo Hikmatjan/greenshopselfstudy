@@ -6,7 +6,7 @@ import Discount from "./discount";
 
 const SideNav = () => {
   return (
-    <div className=" mt-[26px] w-[310px]  bg-[#f5f5f5]">
+    <div className=" w-[310px] px-[18px] py-[14px] max-md:hidden bg-[#f5f5f5]">
       <Categories />
       <PriceRange />
       <Size />

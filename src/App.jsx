@@ -1,14 +1,14 @@
-import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Slide from "./components/navbar/slider";
-import SideNav from "./components/sidenav";
+import Home from "./pages/home";
 
 const App = () => {
   return (
     <div className="w-[80%] m-auto">
       <Navbar />
-      <Slide />
-      <SideNav />
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </div>
   );
 };
